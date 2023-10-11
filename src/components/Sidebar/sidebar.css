@@ -1,0 +1,62 @@
+.SideBarcontainer {
+  display: flex;
+  margin-top: 60px;
+  overflow: scroll;
+  /* border: 1px solid red; */
+  width:100%;
+  padding-bottom: 0px;
+}
+main {
+  /* width: 50%; */
+  /* padding: 10px; */
+}
+.sidebar {
+  /* background: #000; */
+  /* color: #fff; */
+  color: black;
+  height: 120vh;
+  width: 250px;
+  transition: all 0.5s;
+  }
+.SideBarcontainer::-webkit-scrollbar {
+  display: none;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+.logo {
+  font-size: 30px;
+}
+.bars {
+  display: flex;
+  font-size: 15px;
+  margin-left: 50px;
+}
+.link {
+  display: flex;
+  /* color: #fff; */
+  color: black;
+  padding:10px 15px;
+  gap: 15px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.link:hover {
+  background: rgb(244, 243, 244);
+
+  color: #000;
+  transition: all 0.5s;
+}
+.active {
+
+  background: rgb(244, 243, 244);
+  color: #000;
+}
+.icon,
+.link_text {
+  font-size: 15px;
+  text-decoration: none;
+}
