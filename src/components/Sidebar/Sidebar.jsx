@@ -36,12 +36,13 @@ const style = {
   width: 400,
   bgcolor: "background.paper",
   border: "1px solid white",
-  boxShadow: 24, 
+  boxShadow: 24,
   p: 4,
 };
 
 const Sidebar = ({ children }) => {
   const matches = useMediaQuery("(max-width:600px)");
+  const sideBar = useMediaQuery("(max-width:1000px)");
   const [isOpen, setIsOpen] = useState(true);
   const toggle = () => setIsOpen(!isOpen);
   console.log("match", matches);
@@ -91,12 +92,6 @@ const Sidebar = ({ children }) => {
       name: "Likes",
       icon: <FavoriteIcon />,
     },
-    // {
-    //   path: "/productdfList",
-    //   name: "Feedbacks & Suggestions",
-    //   icon: <HelpIcon />,
-
-    // },
   ];
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -105,14 +100,17 @@ const Sidebar = ({ children }) => {
   return (
     <>
       <div className="SideBarcontainer">
-        <div style={{ width: isOpen ? "450px" : "50px" }} className="sidebar">
+        <div style={{ width: !sideBar ? "450px" : "50px" }} className="sidebar">
           <div className="top_section">
-            <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">
+            <h1
+              style={{ display: !sideBar ? "block" : "none" }}
+              className="logo"
+            >
               Logo
             </h1>
             {matches ? (
               <div
-                style={{ marginLeft: isOpen ? "50px" : "0px" }}
+                style={{ marginLeft: !sideBar ? "50px" : "0px" }}
                 className="bars"
               >
                 <FaBars onClick={toggle} />
@@ -130,7 +128,7 @@ const Sidebar = ({ children }) => {
             >
               <div className="icon">{item?.icon}</div>
               <div
-                style={{ display: isOpen ? "block" : "none" }}
+                style={{ display: !sideBar ? "block" : "none" }}
                 className="link_text"
               >
                 {item.name}
@@ -143,7 +141,7 @@ const Sidebar = ({ children }) => {
               <HelpIcon />
             </div>
             <div
-              style={{ display: isOpen ? "block" : "none" }}
+              style={{ display: !matches ? "block" : "none" }}
               className="link_text"
             >
               Feedbacks & Suggestions
@@ -159,13 +157,27 @@ const Sidebar = ({ children }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h5" component="h1">
+        <Box className="feedbackContainer">
+          <Typography
+            id="modal-modal-title"
+            variant="h5"
+            component="h1"
+            sx={{ paddingBottom: 1 }}
+          >
             Feedbacks & Suggestions
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 0 }}>
-            <TextareaAutosize minRows={2} />
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 1, paddingBottom: 1 }}
+          >
+            <TextareaAutosize
+              minRows={4}
+              placeholder="Write your feedback or suggestions here..."
+            />
           </Typography>
+          <Button className="feedBackBtn" variant="contained" color="success">
+            Send Feedback
+          </Button>
         </Box>
       </Modal>
     </>

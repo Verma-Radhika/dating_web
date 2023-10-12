@@ -17,7 +17,6 @@ export const Profile = () => {
       <div id="content" class="content p-0">
         <div class="profile-header">
           <div class="profile-header-cover"></div>
-
           <div class="profile-header-content">
             <div class="profile-header-img">
               <img

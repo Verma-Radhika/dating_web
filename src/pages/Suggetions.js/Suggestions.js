@@ -5,7 +5,6 @@ import "./suggestion.css";
 export const Suggestions = () => {
   const [data, setDate] = useState(Data);
   console.log("data...", data);
-
   return (
     <div className="seuggestionContainer">
       <SuggestionCards />

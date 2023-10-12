@@ -1,12 +1,11 @@
 .selactOptionContainer {
-    margin-top: 30px;
+  margin-top: 30px;
   /* height: 120px; */
   border: 1px solid rgb(218, 209, 209);
-background-color: rgb(255, 255, 255);
-border-radius: 5px;
-
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: max-content;
 }
-
 .selactOption {
   display: flex;
   text-align: center;
@@ -21,18 +20,16 @@ border-radius: 5px;
 .tabActive {
   border-bottom: 2px solid#2196f3;
 }
-.selactOption div:hover{
-      background-color: #f8f7f7;
+.selactOption div:hover {
+  background-color: #f8f7f7;
 }
 .tabHide {
   background-color: transparent;
   border: none;
 }
 
-
-
 /* ..............................SEARCH PAGE DATA ..............*/
-.borderTest{
-    /* background-color: #2196f3;
+.borderTest {
+  /* background-color: #2196f3;
     color: white; */
 }

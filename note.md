@@ -17,15 +17,17 @@ there are three option ? again login ? or may be see profile
 * https://www.bootdey.com/snippets/view/Profile-Followers-Page
 * https://www.bootdey.com/snippets/view/profile-with-contact-information
 
-
- * Pages Done ...
+ 
+ * Pages Done ...  +  responsive
   - Meet New Friends
   - Popular Photos
-  - 
-
+  - Messages
+  - my friends [ litle bit confusion]
+  - Feedback and suggestions responsive
+  - notification 
 
 
  * At the end 
   - swiper :- left [remove]   right [save]
   - navbar 
-  - favorite [stark mark]
+  - favorite [star mark]

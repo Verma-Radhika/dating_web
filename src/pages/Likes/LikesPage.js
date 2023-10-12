@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Notification_page } from "./Notification_page";
-export const Notifications = () => {
+import "../MeetNewFnd/mnf.css";
+
+import { Data } from "../../db.js";
+// import { SearchPageData } from "./SearchPageData";
+// import { Popular } from "./Popular";
+// import { PeopleNearBy } from "./PeopleNearBy";
+import { SearchPageData } from "../MeetNewFnd/SearchPageData";
+
+export const LikesPage = () => {
   const [searchPage, setSearchPage] = useState(true);
   const [nearbyPage, setNearByPage] = useState(false);
+  const [dummyData, setDummyDate] = useState(Data);
 
   const handleSearchPage = () => {
     console.log("ye");
@@ -18,26 +26,38 @@ export const Notifications = () => {
   // console.log("dummy data", dummyData);
   return (
     <>
-      <div className="selactOptionContainer">
+      <div className="selactOptionContainer container-fluid fit-content">
         <div className="selactOption">
           <div
             onClick={handleSearchPage}
             className={nearbyPage ? "tabHide" : "tabActive"}
           >
             {" "}
-            NOTIFICATIONS
+            People NearBy
           </div>
           <div
             onClick={handleNearByPage}
             className={searchPage ? "tabHide" : "tabActive"}
           >
-            NEW FEEDS
+            Popular
           </div>
         </div>
-        {searchPage ? " NOTIFICATIONS" : "NEW FEEDS"}
+        <div className="container">
+          <h1>fkjbvfbv hf</h1>
+          <SearchPageData data={dummyData} />
+          {/* {searchPage ? <PeopleNearBy /> : <Popular />} */}
+        </div>
       </div>
+
       {/* .............................show data......................... */}
-      <Notification_page/>
     </>
   );
 };
+
+
+
+//  bttomdrawer
+//  cards :-  image . text + 
+//  banner  color -blue +  white text .
+//  small cards :-  image ,text 
+
