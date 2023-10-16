@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 export const PopularCards = ({ data }) => {
   console.log("data", data);
+  const [counter, setCounter] = useState(0);
+
   return (
     <div class="container cardContainer py-5">
       <div class="row pb-5 mb-4">
@@ -32,10 +34,14 @@ export const PopularCards = ({ data }) => {
                       class="list-inline-item m-0 "
                       style={{ display: "flex", flexDirection: "row" }}
                     >
-                      <a href="#" class="social-link ">
+                      <a
+                        
+                        class="social-link "
+                        onClick={() => setCounter((prev) => prev + 1)}
+                      >
                         <i class="fa fa-heart"></i>
                       </a>
-                      <p>0</p>
+                      <p>{counter}</p>
                     </li>
                     <li
                       class="list-inline-item m-0"

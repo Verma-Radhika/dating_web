@@ -2,9 +2,7 @@
 
 import "./ProfileStyles/profile.css";
 export const FriendsList = () => {
-  const newValue = "0 3 4 2";
-  const formula = "a+ (n-1)*d";
-  
+
   return (
     <div class="tab-content p-0">
       <div class="tab-pane fade in active show" id="profile-friends">

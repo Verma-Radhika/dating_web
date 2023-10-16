@@ -1,9 +1,12 @@
 import { FormControlLabel, Switch } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import CountrySelect from "react-bootstrap-country-select";
 export const PeopleNearBy = () => {
   const [value, setValue] = React.useState(null);
 
+  const [inputValues , setInputValues] = useState({
+    age: "",
+  });
   return (
     <div className="container">
       <form>

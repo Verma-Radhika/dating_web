@@ -14,7 +14,7 @@ export const PopularHome = () => {
   const [dummyData, setDummyDate] = useState(Data);
 
   const handleSearchPage = () => {
-    console.log("ye");
+    // console.log("ye");
     setSearchPage(true);
     setNearByPage(false);
   };

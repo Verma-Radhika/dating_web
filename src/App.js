@@ -4,13 +4,13 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { AllRoute } from "./Route/AllRoute";
 import { Navbar } from "./components/Navbar/Navbar";
 const App = () => {
+
   const [counter, setCounter] = useState(0);
   const timer = 1000;
   const CounterFunction = () => {
     setCounter((prev) => prev + 1);
   };
   useEffect(() => {
-    
    let func=  setInterval(() => {
       CounterFunction();
     }, timer);
@@ -36,7 +36,7 @@ const App = () => {
             }}
           >
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpghOK0Jd1I3uGSPK3_dXTLeGIqk9IgavpIVECBB6T&s"
+              src="https://www.themediaant.com/blog/wp-content/uploads/2021/07/text-advertising-business-web-icons-behind-torn-white-paper-text-advertising-behind-torn-white-paper-132063555.jpg"
               width={"100%"}
               height="100%"
             />
@@ -53,7 +53,7 @@ const App = () => {
               popular and make more friends, upload your photo now!
             </div>
           </div>
-          <div><h1>counter value {counter} </h1></div>
+         
           <AllRoute />
         </div>
       </div>

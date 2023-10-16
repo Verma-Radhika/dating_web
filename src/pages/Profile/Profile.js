@@ -10,7 +10,11 @@ import { Post } from "./Post";
 export const Profile = () => {
   const [proValue, setProValue] = useState(1);
 
-  useEffect(() => {}, []);
+
+
+  useEffect(() => {
+
+  }, []);
   console.log("value", proValue);
   return (
     <div class="container mt-2">
@@ -41,7 +45,7 @@ export const Profile = () => {
             <li class="nav-item">
               <a
                 class={`nav-link_ ${proValue == 2 ? "active show" : ""}`}
-                onClick={() => setProValue(2)}
+                onClick={() => setProValue(2  )}
               >
                 ABOUT
               </a>

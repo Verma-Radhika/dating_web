@@ -33,7 +33,7 @@ const Cards = () => {
                       </a>
                     </li>
                     <li class="list-inline-item m-0">
-                      <a href="#" class="social-link">
+                      <a href="#" class="s,ocial-link">
                         <i class="fa fa-linkedin"></i>
                       </a>
                     </li>
