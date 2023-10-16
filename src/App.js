@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { AllRoute } from "./Route/AllRoute";
 import { Navbar } from "./components/Navbar/Navbar";
-
 const App = () => {
+  const [counter, setCounter] = useState(0);
+  const timer = 1000;
+  const CounterFunction = () => {
+    setCounter((prev) => prev + 1);
+  };
+  useEffect(() => {
+    
+   let func=  setInterval(() => {
+      CounterFunction();
+    }, timer);
+
+    return ()=> clearInterval(func)
+  },);
+
   return (
     <>
       <Navbar />
@@ -40,6 +53,7 @@ const App = () => {
               popular and make more friends, upload your photo now!
             </div>
           </div>
+          <div><h1>counter value {counter} </h1></div>
           <AllRoute />
         </div>
       </div>

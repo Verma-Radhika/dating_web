@@ -6,6 +6,7 @@ import { Data } from "../../db.js";
 import { Popular } from "./Popular";
 import { PeopleNearBy } from "./PeopleNearBy";
 import { SearchPageData } from "../MeetNewFnd/SearchPageData";
+import { PopularCards } from "../../components/CardComponents/PopularCards";
 
 export const PopularHome = () => {
   const [searchPage, setSearchPage] = useState(true);
@@ -48,7 +49,7 @@ export const PopularHome = () => {
       </div>
 
       {/* .............................show data......................... */}
-      <SearchPageData data={dummyData} />
+      <PopularCards data={dummyData} />
     </>
   );
 };

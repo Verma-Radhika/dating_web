@@ -1,5 +1,4 @@
 import "./ProfileStyles/about.css";
-
 // import "./ProfileStyles/profile.css";
 export const About = () => {
   return (

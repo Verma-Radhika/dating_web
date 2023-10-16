@@ -16,7 +16,7 @@ const Cards = () => {
                 <div class="p-4">
                   <h5 class="mb-0">Mark Rockwell</h5>
                   <p class="small text-muted">CEO - Consultant</p>
-                  <ul class="social mb-0 list-inline mt-3">
+                  <ul class="social mb-0 list-inline mct-3">
                     <li class="list-inline-item m-0">
                       <a href="#" class="social-link">
                         <i class="fa fa-facebook-f"></i>

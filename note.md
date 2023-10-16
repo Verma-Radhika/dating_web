@@ -25,8 +25,18 @@ there are three option ? again login ? or may be see profile
   - my friends [ litle bit confusion]
   - Feedback and suggestions responsive
   - notification 
+  - 
 
 
+
+
+  * Today Task ...
+   - profile :- edit options  :- no 
+   - 
+
+
+
+  
  * At the end 
   - swiper :- left [remove]   right [save]
   - navbar 
